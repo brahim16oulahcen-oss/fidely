@@ -1,0 +1,53 @@
+{
+  "name": "fidely",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "demo:reset": "node -e \"require('fs').rmSync('.data',{recursive:true,force:true});console.log('Démo réinitialisée')\""
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.9.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.4.0",
+    "geist": "^1.9.0",
+    "jspdf": "^4.2.1",
+    "jsqr": "^1.4.0",
+    "lucide-react": "^1.66.0",
+    "motion": "^14.9.0",
+    "next": "^15.5.28",
+    "next-themes": "^0.4.6",
+    "qrcode": "^1.5.4",
+    "radix-ui": "^1.8.1",
+    "react": "^19.1.1",
+    "react-day-picker": "^9.14.0",
+    "react-dom": "^19.1.1",
+    "react-hook-form": "^7.91.0",
+    "recharts": "^2.15.4",
+    "server-only": "^0.0.1",
+    "sonner": "^2.0.8",
+    "tailwind-merge": "^3.7.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.7",
+    "@playwright/test": "^1.64.1",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.6",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^15.5.28",
+    "tailwindcss": "^4.3.3",
+    "typescript": "5.9",
+    "vitest": "^3.2.7"
+  }
+}
